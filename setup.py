@@ -1,13 +1,4 @@
-# https://stackoverflow.com/a/49837302
-try: # for pip >= 10
-    from pip._internal.req import parse_requirements
-except ImportError: # for pip <= 9.0.3
-    from pip.req import parse_requirements
 from setuptools import setup
-
-# Requirements
-install_reqs = parse_requirements('requirements.txt', session='dummy')
-reqs = [str(ir.req) for ir in install_reqs]
 
 setup(
     name='Flask-Boto3',
@@ -21,7 +12,7 @@ setup(
     zip_safe=False,
     include_package_data=True,
     test_suite='tests',
-    install_requires=reqs,
+    install_requires=['Flask', 'boto3'],
     platforms='any',
     classifiers=[
         'Environment :: Web Environment',

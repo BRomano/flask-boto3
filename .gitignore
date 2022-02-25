@@ -89,3 +89,5 @@ ENV/
 # Handled dynamically by Pipenv
 requirements.txt
 requirements_test.txt
+
+.idea/
