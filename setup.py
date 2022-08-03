@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(
-    name='Flask-Boto3',
+    name='Flask_Boto3',
     version='0.3.4',
     url='https://github.com/Ketouem/flask-boto3',
     license='MIT',
