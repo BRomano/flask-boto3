@@ -6,12 +6,13 @@ name = "pypi"
 [packages]
 "boto3" = "*"
 Flask = "*"
-flask-boto3 = {editable = true, path = "."}
 
 [dev-packages]
 coverage = "*"
 pytest = "*"
 pytest-cov = "*"
+"e1839a8" = {path = ".", editable = true}
+bandit = "*"
 
 [requires]
 python_version = "3.8"
